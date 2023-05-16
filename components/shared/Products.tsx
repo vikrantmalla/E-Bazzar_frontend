@@ -16,7 +16,7 @@ const Products = ({ item }: Props) => {
             ""
           )}
           <img
-            src="../images/items1.jpg"
+            src={`${import.meta.env.VITE_INTERNAL_IMAGE_URL}/${item.product_image}`}
             className="card-img-top"
             alt="items"
           />
