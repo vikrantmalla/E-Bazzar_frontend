@@ -8,7 +8,7 @@ import NavBar from "../components/shared/NavBar";
 function App() {
   const [product, setProduct] = useState<Data.Product>([]);
   const { data, isLoading, serverError } = useFetch(
-    "product/"
+    `${import.meta.env.VITE_INTERNAL_API_URL}/product/`
   );
 
   //get all countries
